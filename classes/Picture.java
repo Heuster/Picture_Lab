@@ -223,10 +223,10 @@ public class Picture extends SimplePicture
    */
   public static void main(String[] args) 
   {
-    Picture beach = new Picture("beach.jpg");
-    beach.explore();
-    beach.zeroBlue();
-    beach.explore();
+    Picture beach = new Picture("cody.png");
+    Picture p = new Picture("cody.png");
+    Picture smallP = p.scale(0.25,0.25);
+    smallP.write("cody.png");
   }
   
 } // this } is the end of class Picture, put all new methods before this
